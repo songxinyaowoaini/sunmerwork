@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* background-color: #000; */
+  padding-top: 5%;
+  background-image: url(../img/bulebg.png);
+
+  }
+
+.card-container {
+  width: 600px;
+  margin: 0 auto;
+  animation: cardContainerLoad 2s;
+}
+
+@keyframes cardContainerLoad {
+  from {
+    opacity: 0;
+    transform: translate3d(0,10%,0)
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.card-container .image-wrapper {
+  font-size: 0px;
+}
+
+.card-container .image-wrapper img {
+  width: 600px;
+  border-radius: 8px 8px 0 0 ;
+}
+
+.card-container .title-wrapper {
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+}
+
+.card-container .title-wrapper .title {
+  text-align: center;
+  padding: 40px 0 40px 0;
+}
+
+.card-container .title-wrapper .subtitle {
+  text-indent: 2em;
+  font-size: 20px;
+  padding: 0 30px 50px 30px;
+  color: rgb(79, 92, 99);
+}
+
+.left{
+	width: 50vw;
+	height: 100vh;
+	position: absolute;
+	
+}
+.right{
+	width: 50vw;
+height: 100vh;
+	position: absolute;
+	 left: 920px;
+
+	 
+}
+
